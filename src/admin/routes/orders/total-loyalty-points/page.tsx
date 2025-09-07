@@ -3,8 +3,8 @@ import { Container, Heading, Text } from "@medusajs/ui"
 import { useEffect, useState } from "react"
 
 const TotalLoyaltyPointsPage = () => {
-  const [points, setPoints] = useState<number>(0)
-
+   const [points, setPoints] = useState<number>(0)
+  
   useEffect(() => {
     fetch("/store/orders/total-loyalty-points", {
       headers: {
